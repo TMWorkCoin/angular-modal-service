@@ -41,7 +41,7 @@ module.factory('ModalService', ['$animate', '$document', '$compile', '$controlle
     };
 
     self.showModal = function(options) {
-      
+
       $rootScope.$broadcast('modal-open');
       //  Get the body of the document, we'll add the modal to this.
       var body = angular.element($document[0].body);
