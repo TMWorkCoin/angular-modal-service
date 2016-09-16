@@ -206,14 +206,14 @@ ModalService.showModal({
 ModalService is broadcasting two events on `modal-open` and on `modal-close`.
 
 ```js
-$scope.$on('modal-open', function(modal){
+$scope.$on('modal-open', function(event, modal){
 
   console.log('this is modal controller name is:',modal.controllerName);
   // your function logic
 
 });
 
-$scope.$on('modal-close', function(modal){
+$scope.$on('modal-close', function(event, modal){
 
   console.log('this is modal controller name is:',modal.controllerName);
   // your function logic
