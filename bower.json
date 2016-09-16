@@ -1,9 +1,10 @@
 {
   "name": "angular-modal-service",
-  "version": "0.10.1",
-  "homepage": "https://github.com/dwmkerr/angular-modal-service",
+  "version": "0.10.2",
+  "homepage": "https://github.com/tomasbulva/angular-modal-service/",
   "authors": [
-    "Dave Kerr (github.com/dwmkerr)"
+    "Dave Kerr (github.com/dwmkerr)",
+    "Tomas Bulva (github.com/tomasbulva)"
   ],
   "description": "AngularJS Service for showing Modals and Popups",
   "main": "dst/angular-modal-service.js",
