@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dst'),
     filename: 'angular-modal-service.js'
   },
-  
+
   //  Make sure we include sourcemaps. This is for the bundled
   //  code, not the uglfied code (we uglify with npm run build,
   //  see package.json for details).
@@ -22,17 +22,26 @@ module.exports = {
   },
 
   module: {
-    preLoaders: [{
-      test: /\.js$/,
-      exclude: [
-        path.resolve('node_modules/')
-      ],
-      loader: 'babel'
-    },{
-      test: /\.js$/,
-      include: path.resolve('src/'),
-      loader: 'isparta'
-    }]
+    // preLoaders: [{
+    //   test: /\.js$/,
+    //   exclude: [
+    //     path.resolve('node_modules/')
+    //   ],
+    //   loader: 'babel'
+    // },{
+    //   test: /\.js$/,
+    //   include: path.resolve('src/'),
+    //   loader: 'isparta'
+    // }],
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ]
   },
 
   babel: {
